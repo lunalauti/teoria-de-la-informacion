@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4f6dad3e-c594-4557-af2f-2eadbc3312ca" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/teoria-de-la-informacion.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TP_Integrador/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TP_Integrador/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TP_Integrador/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TP_Integrador/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TP_Integrador/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TP_Integrador/out/production/TP_Integrador/Negocio/Fuente.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TP_Integrador/out/production/TP_Integrador/prueba/Prueba.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TP_Integrador/src/negocio/Fuente.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/teoria-de-la-informacion.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP_Integrador/out/production/TP_Integrador/Negocio/Probabilidad.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP_Integrador/out/production/TP_Integrador/Negocio/Util.class" beforeDir="false" afterPath="$PROJECT_DIR$/TP_Integrador/out/production/TP_Integrador/Negocio/Util.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP_Integrador/out/production/TP_Integrador/Prueba.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP_Integrador/out/production/TP_Integrador/modelo/Matriz.class" beforeDir="false" afterPath="$PROJECT_DIR$/TP_Integrador/out/production/TP_Integrador/modelo/Matriz.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP_Integrador/src/modelo/Matriz.java" beforeDir="false" afterPath="$PROJECT_DIR$/TP_Integrador/src/modelo/Matriz.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP_Integrador/src/negocio/Probabilidad.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP_Integrador/src/prueba/Prueba.java" beforeDir="false" afterPath="$PROJECT_DIR$/TP_Integrador/src/prueba/Prueba.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="2a66e533-aff7-4f92-866f-4141e48acdfe" />
+        <option name="url" value="https://github.com/lunalauti/teoria-de-la-informacion.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2EXl3mpj4rpNmClxzFhPGzGyAhr" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/Camila/Desktop/FACU/Teoria de la Informacion/TP Integrador/teoria-de-la-informacion",
+    "settings.editor.selected.configurable": "vcs.Git"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4f6dad3e-c594-4557-af2f-2eadbc3312ca" name="Changes" comment="" />
+      <created>1662749636032</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1662749636032</updated>
+      <workItem from="1662749914766" duration="3618000" />
+      <workItem from="1662768753787" duration="854000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
