@@ -26,9 +26,9 @@ public class Matriz {
     /*
     * Calcula las probabilidades condicionales de cada simbolo (por columna)*/
     public void calculaCondicional(HashMap<Character, Integer> mapa){
-        for (int i = 0;i < CANT; i++) {
-            int cantidad = mapa.get((char)(i+65));
-            for (int j = 0; j < CANT; j++) {
+        for (int j = 0;j < CANT; j++) {
+            int cantidad = mapa.get((char)(j+65));
+            for (int i = 0; i < CANT; i++) {
                 this.m[i][j] /= cantidad;
             }
         }
