@@ -10,5 +10,6 @@ public class Prueba {
         Matriz matPCondicional = Fuente.getInstance().getPCondicional(nom_arch);
         matPCondicional.muestraM();
         System.out.println(Fuente.getInstance().getContador());
+        System.out.println("La fuente es de memoria nula? -> "+Fuente.getInstance().isMemoriaNula());
     }
 }

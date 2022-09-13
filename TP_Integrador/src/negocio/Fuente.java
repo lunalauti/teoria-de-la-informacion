@@ -4,11 +4,14 @@ import modelo.Matriz;
 import java.io.*;
 import java.util.HashMap;
 
+import static java.lang.Math.abs;
+
 public class Fuente {
 
+    private static final int cantSimbolos = 10000;
     private static Fuente _instancia;
     private Matriz matriz = new Matriz();
-    private HashMap<Character,Integer> contador = new HashMap<Character,Integer>();
+    private HashMap<Character,Float> contador = new HashMap<Character,Float>();
 
     private Fuente(){ }
 
@@ -23,7 +26,7 @@ public class Fuente {
         return this.matriz;
     }
 
-    public HashMap<Character, Integer> getContador(){
+    public HashMap<Character, Float> getContador(){
         return this.contador;
     }
 
@@ -35,6 +38,7 @@ public class Fuente {
              * Arma la matriz leyendo todos los simbolos del archivo */
             Reader reader = new BufferedReader(new FileReader(arch));
             char antSimbol = (char) reader.read(); //simbolo anterior
+            char primera = antSimbol;
             int nextSimbol = reader.read();
             while (nextSimbol != -1) { //si el proximo simbolo es -1(ascii), fin de archivo
                 char actSimbol = (char) nextSimbol;
@@ -46,17 +50,60 @@ public class Fuente {
                     this.contador.replace((char)actSimbol, this.contador.get((char)actSimbol)+1);
                 }
                 else{
-                    this.contador.put((char) actSimbol,1);
+                    this.contador.put((char) actSimbol, 1F);
                 }
 
                 antSimbol = actSimbol;
                 nextSimbol = reader.read();
             }
             this.matriz.calculaCondicional(contador);
+            //agrega el primer caracter al hash que no habia sido tomado en cuenta para la matriz
+            this.contador.replace((char)primera, this.contador.get((char)primera)+1);
+            //Pongo en el contador la probabilidad independiente de cada signo
+            this.calculaProbabilidadesInd();
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
         return this.matriz;
+    }
+
+    public void calculaProbabilidadesInd(){
+        HashMap<Character, Float> probInd = new HashMap<Character, Float>();
+        for(HashMap.Entry<Character, Float> aux : this.contador.entrySet()){
+            this.contador.replace(aux.getKey(), aux.getValue()/cantSimbolos);
+        }
+    }
+
+    //Chequea que las probabilidades de la matriz y de el hash de probabilidades independientes coincidan
+    //Para esto multiplico las prob independientes de los simbolos de la fuente y comparo con el valor de la matriz en esa filaxcolumna
+    //Si la diferencia entre matriz[i][j] y probIndependiente <= valor aboluto 0.01 es de memoria nula
+    public boolean isMemoriaNula(){
+        int i = 0;
+        boolean aux = true;
+        while ((i < this.matriz.getCant() && (aux == true))){
+            int j = i;
+            while ((j < this.matriz.getCant() && (aux == true))){
+                if (i == j){
+                    float valor = this.getContador().get((char)(i+65));
+                    if (this.matriz.getValor(i,i) - valor*valor <= abs(0.01)){
+                        j++;
+                    } else {
+                        aux = false;
+                    }
+                //No estan en la diagonal
+                } else {
+                    float valor1 = this.getContador().get((char)(i+65));
+                    float valor2 = this.getContador().get((char)(j+65));
+                    if ((this.matriz.getValor(i,j) - valor1*valor2 <= abs(0.01)) && (this.matriz.getValor(j,i) - valor1*valor2 <= abs(0.01)) ){
+                        j++;
+                    } else {
+                        aux = false;
+                    }
+                }
+            }
+            i++;
+        }
+        return aux;
     }
 
 }

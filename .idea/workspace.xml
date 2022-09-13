@@ -2,27 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4f6dad3e-c594-4557-af2f-2eadbc3312ca" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/teoria-de-la-informacion.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TP_Integrador/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TP_Integrador/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TP_Integrador/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TP_Integrador/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TP_Integrador/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TP_Integrador/out/production/TP_Integrador/Negocio/Fuente.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TP_Integrador/out/production/TP_Integrador/prueba/Prueba.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TP_Integrador/src/negocio/Fuente.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/teoria-de-la-informacion.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TP_Integrador/out/production/TP_Integrador/Negocio/Probabilidad.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TP_Integrador/out/production/TP_Integrador/Negocio/Util.class" beforeDir="false" afterPath="$PROJECT_DIR$/TP_Integrador/out/production/TP_Integrador/Negocio/Util.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TP_Integrador/out/production/TP_Integrador/Prueba.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TP_Integrador/out/production/TP_Integrador/modelo/Matriz.class" beforeDir="false" afterPath="$PROJECT_DIR$/TP_Integrador/out/production/TP_Integrador/modelo/Matriz.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TP_Integrador/src/modelo/Matriz.java" beforeDir="false" afterPath="$PROJECT_DIR$/TP_Integrador/src/modelo/Matriz.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TP_Integrador/src/negocio/Probabilidad.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TP_Integrador/src/prueba/Prueba.java" beforeDir="false" afterPath="$PROJECT_DIR$/TP_Integrador/src/prueba/Prueba.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP_Integrador/src/negocio/Fuente.java" beforeDir="false" afterPath="$PROJECT_DIR$/TP_Integrador/src/negocio/Fuente.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,10 +34,30 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Camila/Desktop/FACU/Teoria de la Informacion/TP Integrador/teoria-de-la-informacion",
+    "last_opened_file_path": "C:/Users/Camila/Desktop/FACU/Teoria de la Informacion/TP Integrador/teoria-de-la-informacion/TP_Integrador",
     "settings.editor.selected.configurable": "vcs.Git"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="Prueba" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="prueba.Prueba" />
+      <module name="teoria-de-la-informacion" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="prueba.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Prueba" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -66,8 +67,16 @@
       <option name="presentableId" value="Default" />
       <updated>1662749636032</updated>
       <workItem from="1662749914766" duration="3618000" />
-      <workItem from="1662768753787" duration="854000" />
+      <workItem from="1662768753787" duration="2261000" />
     </task>
+    <task id="LOCAL-00001" summary="HashMap y Fuente">
+      <created>1662775098839</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1662775098840</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -83,5 +92,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="HashMap y Fuente" />
+    <option name="LAST_COMMIT_MESSAGE" value="HashMap y Fuente" />
   </component>
 </project>
