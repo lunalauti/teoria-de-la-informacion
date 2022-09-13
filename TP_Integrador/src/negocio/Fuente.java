@@ -106,4 +106,24 @@ public class Fuente {
         return aux;
     }
 
+    /**
+     * Otra alternativa para retornar si la fuente es de memoria nula, comparando los valores
+     * de la matriz, con el valor equiprobable 1/n, con una tolerancia de 0.01
+     * @return true si la memoria es nula, y false si la memoria es no nula
+     */
+    public boolean isNulaMemoria(){
+        boolean response = true;
+        int i = 0;
+        double tolerance = 0.01;
+        while( i < this.matriz.getCant() && response){
+            int j = 0;
+            while(j < this.matriz.getCant() && response){
+                double absoluteDifference = Math.abs(this.matriz.getValor(i,j) - (1/this.matriz.getCant()));
+                if(absoluteDifference > tolerance)
+                    response = false;
+            }
+        }
+        return response;
+    }
+
 }

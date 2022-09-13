@@ -11,5 +11,7 @@ public class Prueba {
         matPCondicional.muestraM();
         System.out.println(Fuente.getInstance().getContador());
         System.out.println("La fuente es de memoria nula? -> "+Fuente.getInstance().isMemoriaNula());
+        System.out.println("La fuente es de memoria nula? -> "+Fuente.getInstance().isNulaMemoria());
+
     }
 }
