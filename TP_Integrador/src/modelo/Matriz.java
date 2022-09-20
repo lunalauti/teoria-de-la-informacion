@@ -10,6 +10,8 @@ public class Matriz {
 
     public int getCant(){ return CANT; }
 
+    public double [][] getM(){ return m; }
+
     public double getValor(int fila, int columna){ return m[fila][columna];}
 
     public void incrementaM(int i, int j){
@@ -35,4 +37,6 @@ public class Matriz {
             }
         }
     }
+
+
 }

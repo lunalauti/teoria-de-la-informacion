@@ -126,4 +126,53 @@ public class Fuente {
         return response;
     }
 
+    //Calcula la potencia de la matriz de transicion
+    private double[][] potenciaMat(double[][] matriz){
+        double[][] pot = new double[this.matriz.getCant()][this.matriz.getCant()];
+
+        for(int i = 0; i < this.matriz.getCant(); i++){
+            for (int j = 0; j < this.matriz.getCant(); j++){
+                for (int k = 0; k < this.matriz.getCant(); k++){
+                    pot[i][j] += matriz[i][k] * matriz[k][j];
+                }
+            }
+        }
+        return pot;
+    }
+
+    //Revisa que todos los elementos de la matriz son mayores a 0
+    private boolean mayoresACero(double[][] matriz){
+        boolean aux = true;
+        int i = 0;
+        while (i < this.matriz.getCant() && aux == true){
+            int j = 0;
+            while (j < this.matriz.getCant() && aux == true){
+                if (matriz[i][j] <= 0){
+                    aux = false;
+                } else {
+                    j++;
+                }
+            }
+            i++;
+        }
+        return aux;
+    }
+
+    //Se fija si la fuente es ergodica sacando la potencia de la matriz y fijandose que todos sus elementos sean mayores a 0
+    //Revisa 5 potencias de la matriz y si ninguna es entonces no es ergodica
+    public boolean isErgodica(){
+        boolean aux = true;
+        double[][] potencia = matriz.getM();
+        int i = 0;
+        while (aux == true && i < 5){
+            potencia = potenciaMat(potencia);
+            if (!mayoresACero(potencia)){
+                aux = false;
+            } else{
+                i++;
+            }
+        }
+        return aux;
+    }
+
 }

@@ -12,6 +12,8 @@ public class Prueba {
         System.out.println(Fuente.getInstance().getContador());
         System.out.println("La fuente es de memoria nula? -> "+Fuente.getInstance().isMemoriaNula());
         System.out.println("La fuente es de memoria nula? -> "+Fuente.getInstance().isNulaMemoria());
+        System.out.println("La fuente es ergodica? -> "+Fuente.getInstance().isErgodica());
+
 
     }
 }
