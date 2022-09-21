@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4f6dad3e-c594-4557-af2f-2eadbc3312ca" name="Changes" comment="">
+    <list default="true" id="4f6dad3e-c594-4557-af2f-2eadbc3312ca" name="Changes" comment="HashMap y Fuente">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP_Integrador/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TP_Integrador/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP_Integrador/TP_Integrador.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/TP_Integrador/src/negocio/Fuente.java" beforeDir="false" afterPath="$PROJECT_DIR$/TP_Integrador/src/negocio/Fuente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP_Integrador/src/prueba/Prueba.java" beforeDir="false" afterPath="$PROJECT_DIR$/TP_Integrador/src/prueba/Prueba.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP_Integrador/tp1_grupo3.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +38,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Camila/Desktop/FACU/Teoria de la Informacion/TP Integrador/teoria-de-la-informacion/TP_Integrador",
+    "last_opened_file_path": "D:/Backup/Facultad/3ro/Teoria de la información/teoria-de-la-informacion",
     "settings.editor.selected.configurable": "vcs.Git"
   }
 }]]></component>
@@ -90,6 +94,36 @@
             <State />
           </value>
         </entry>
+        <entry key="a48ab6b2-0978-4db1-8c9c-899409acb4e2">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="a48ab6b2-0978-4db1-8c9c-899409acb4e2" value="TOOL_WINDOW" />
       </map>
     </option>
   </component>

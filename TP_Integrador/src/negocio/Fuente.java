@@ -175,4 +175,38 @@ public class Fuente {
         return aux;
     }
 
+    /* Metodo para obtener el vector estacionario  */
+    public double[] getVectorEstacionario(int n){
+        int i,j,k;
+        double[][] mat= this.matriz.getM();
+        double[][] aux= new double[n+1][n+2];
+        double l;
+        double V[]= new double[n];
+
+        /* Copia la matriz y le resta la matriz id */
+        for(i=0;i<n;i++)
+            for (j = 0; j < n; j++)
+                aux[i][j] = (i == j) ? mat[i][j] - 1 : mat[i][j];
+
+        /*Extiende la matriz*/
+        for(i=0;i<n;i++)
+                aux[i][n]=0;
+
+        /* Metodo de Gauss Jordan */
+        for (k=0;k<n;k++){
+            for (i=0;i<n;i++){
+                l= aux[i][k];
+                for(j=0;j<=n;j++){
+                    if (i!=k)
+                        aux[i][j]= (aux[k][k]*aux[i][j]) - (l* aux[k][j]);
+                }
+            }
+        }
+        for ( i = 0;i < n;i++ )
+        {
+            System.out.println( "V"+(i+1) +" es " + aux[i][n]/aux[i][i]);
+            V[i]= aux[i][n]/aux[i][i];
+        }
+        return V;
+    }
 }
