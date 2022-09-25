@@ -3,11 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="4f6dad3e-c594-4557-af2f-2eadbc3312ca" name="Changes" comment="HashMap y Fuente">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TP_Integrador/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TP_Integrador/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TP_Integrador/TP_Integrador.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/TP_Integrador/src/negocio/Fuente.java" beforeDir="false" afterPath="$PROJECT_DIR$/TP_Integrador/src/negocio/Fuente.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TP_Integrador/src/prueba/Prueba.java" beforeDir="false" afterPath="$PROJECT_DIR$/TP_Integrador/src/prueba/Prueba.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TP_Integrador/tp1_grupo3.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,15 +30,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/Backup/Facultad/3ro/Teoria de la información/teoria-de-la-informacion",
-    "settings.editor.selected.configurable": "vcs.Git"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Backup/Facultad/3ro/Teoria de la información/teoria-de-la-informacion&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Prueba" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="prueba.Prueba" />

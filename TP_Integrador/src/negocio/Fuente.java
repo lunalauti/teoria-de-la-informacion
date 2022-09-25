@@ -183,14 +183,18 @@ public class Fuente {
         double l;
         double V[]= new double[n];
 
-        /* Copia la matriz y le resta la matriz id */
+        /* Copia la matriz */
         for(i=0;i<n;i++)
             for (j = 0; j < n; j++)
-                aux[i][j] = (i == j) ? mat[i][j] - 1 : mat[i][j];
+                aux[i][j] = (i == n-1) ? 1 : mat[i][j]; //reemplaza la ultima ecuacion por 1's
+
+        /* Resta la matriz identidad */
+        for(i=0;i<n-1;i++)
+            aux[i][i] -= 1; // a la ultima fila no le resta la id
 
         /*Extiende la matriz*/
         for(i=0;i<n;i++)
-                aux[i][n]=0;
+                aux[i][n]=(i==n-1)?1:0;
 
         /* Metodo de Gauss Jordan */
         for (k=0;k<n;k++){
@@ -204,9 +208,25 @@ public class Fuente {
         }
         for ( i = 0;i < n;i++ )
         {
-            System.out.println( "V"+(i+1) +" es " + aux[i][n]/aux[i][i]);
+            //System.out.format("%.3f   ", aux[i][n]/aux[i][i]);
             V[i]= aux[i][n]/aux[i][i];
         }
         return V;
+    }
+
+    public double calculaEntropia(double[] V, int n){
+        int i,j;
+        double[][] mat= this.matriz.getM();
+        double H=0,aux;
+        for(i=0;i<n;i++){
+            aux=0;
+            for(j=0;j<n;j++){
+                aux+= mat[i][j]*(Math.log(1/mat[i][j]) / Math.log(2));
+            }
+            H+= V[i]*aux;
+        }
+
+        System.out.format("%.3f   ", H);
+        return H;
     }
 }
