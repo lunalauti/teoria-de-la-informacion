@@ -3,6 +3,7 @@ package negocio;
 import modelo.Matriz;
 import java.io.*;
 import java.util.HashMap;
+import java.util.Map;
 
 import static java.lang.Math.abs;
 
@@ -12,6 +13,13 @@ public class Fuente {
     private static Fuente _instancia;
     private Matriz matriz = new Matriz();
     private HashMap<Character,Float> contador = new HashMap<Character,Float>();
+
+    private HashMap<String,Float> cadena3 = new HashMap<String,Float>();
+
+    private HashMap<String,Float> cadena5 = new HashMap<String,Float>();
+
+    private HashMap<String,Float> cadena7 = new HashMap<String,Float>();
+
 
     private Fuente(){ }
 
@@ -214,19 +222,122 @@ public class Fuente {
         return V;
     }
 
-    public double calculaEntropia(double[] V, int n){
+    public void getEntropia(double[] V, int n){
         int i,j;
         double[][] mat= this.matriz.getM();
         double H=0,aux;
         for(i=0;i<n;i++){
             aux=0;
             for(j=0;j<n;j++){
-                aux+= mat[i][j]*(Math.log(1/mat[i][j]) / Math.log(2));
+                aux+= mat[i][j]*(Math.log(1/mat[i][j]) / Math.log(3));
             }
             H+= V[i]*aux;
         }
-
-        System.out.format("%.3f   ", H);
-        return H;
+        System.out.format("Entropia de la fuente: %.2f \n", H);
     }
+
+    public void setCadenas(String nom_arch){
+        File arch = new File(nom_arch);
+        try {
+            Reader reader = new BufferedReader(new FileReader(arch));
+            StringBuilder s3 = new StringBuilder(3);
+            StringBuilder s5 = new StringBuilder(5);
+            StringBuilder s7 = new StringBuilder(7);
+            int nextSimbol = reader.read();
+            int cont3=0, cont5=0, cont7=0;
+            while (nextSimbol != -1) {
+                char actSimbol = (char) nextSimbol;
+                cont3++;
+                cont5++;
+                cont7++;
+                s3.append(actSimbol);
+                s5.append(actSimbol);
+                s7.append(actSimbol);
+
+                if(cont3==3){
+                    if (cadena3.containsKey(s3.toString())){
+                        cadena3.replace(s3.toString(),(cadena3.get(s3.toString())+1));
+                    } else{
+                        cadena3.put(s3.toString(),1F);
+                    }
+                    cont3=0;
+                    s3.delete(0,s3.length()); //reinicia la cadena
+                }
+
+                if(cont5==5){
+                   if (cadena5.containsKey(s5.toString())){
+                       cadena5.replace(s5.toString(),(cadena5.get(s5.toString())+1));
+                   } else{
+                       cadena5.put(s5.toString(),1F);
+                   }
+                    cont5=0;
+                   s5.delete(0,s5.length()); //reinicia la cadena
+                }
+
+                if(cont7==7){
+                    if (cadena7.containsKey(s7.toString())){
+                        cadena7.replace(s7.toString(),(cadena7.get(s7.toString())+1));
+                    } else{
+                        cadena7.put(s7.toString(),1F);
+                    }
+                    cont7=0;
+                    s7.delete(0,s7.length()); //reinicia la cadena
+                }
+                nextSimbol=reader.read();
+            }
+        }catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    public void getFrecuenciasCadenas() {
+
+        int cant3 = cantSimbolos / 3;
+        for (Map.Entry<String,Float> entry3 : cadena3.entrySet()){
+            String clave= entry3.getKey();
+            cadena3.replace(clave,cadena3.get(clave)/cant3);
+        }
+
+        int cant5 = cantSimbolos / 5;
+        for (Map.Entry<String,Float> entry5 : cadena5.entrySet()){
+            String clave= entry5.getKey();
+            cadena5.replace(clave,cadena5.get(clave)/cant5);
+        }
+
+        int cant7 = cantSimbolos / 7;
+        for (Map.Entry<String,Float> entry7 : cadena7.entrySet()){
+            String clave= entry7.getKey();
+            cadena7.replace(clave,cadena7.get(clave)/cant7);
+        }
+    }
+
+    public void getEntropiaCadenas(){
+        float H3=0, H5=0, H7=0;
+        System.out.println("Cantidad de informacion de cadenas de 3");
+        for (Map.Entry<String,Float> entry3 : cadena3.entrySet()){
+            String clave= entry3.getKey();
+            System.out.printf("%s: \t %.2f \n",clave,Math.log(1/cadena3.get(clave))/ Math.log(3));
+            H3+=cadena3.get(clave)* ( Math.log(1/cadena3.get(clave))/ Math.log(3));
+        }
+        System.out.printf("Entropia de cadenas de 3: %.2f \n",H3);
+
+        int cant5 = cantSimbolos / 5;
+        System.out.println("Cantidad de informacion de cadenas de 5");
+        for (Map.Entry<String,Float> entry5 : cadena5.entrySet()){
+            String clave= entry5.getKey();
+            System.out.printf("%s: \t %.2f \n",clave,Math.log(1/cadena5.get(clave))/ Math.log(3));
+            H5+=cadena5.get(clave)* ( Math.log(1/cadena5.get(clave))/ Math.log(3));
+        }
+        System.out.printf("Entropia de cadenas de 5: %.2f \n",H5);
+
+        int cant7 = cantSimbolos / 7;
+        System.out.println("Cantidad de informacion de cadenas de 7");
+        for (Map.Entry<String,Float> entry7 : cadena7.entrySet()){
+            String clave= entry7.getKey();
+            System.out.printf("%s: \t %.2f \n",clave,Math.log(1/cadena7.get(clave))/ Math.log(3));
+            H7+=cadena7.get(clave)* ( Math.log(1/cadena7.get(clave))/ Math.log(3));
+        }
+        System.out.printf("Entropia de cadenas de 7: %.2f \n",H7);
+    }
+
 }
