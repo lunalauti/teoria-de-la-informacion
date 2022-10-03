@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4f6dad3e-c594-4557-af2f-2eadbc3312ca" name="Changes" comment="HashMap y Fuente">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TP_Integrador/src/negocio/Fuente.java" beforeDir="false" afterPath="$PROJECT_DIR$/TP_Integrador/src/negocio/Fuente.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TP_Integrador/src/prueba/Prueba.java" beforeDir="false" afterPath="$PROJECT_DIR$/TP_Integrador/src/prueba/Prueba.java" afterDir="false" />
     </list>

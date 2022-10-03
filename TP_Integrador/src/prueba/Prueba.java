@@ -18,5 +18,6 @@ public class Prueba {
         Fuente.getInstance().setCadenas(nom_arch);
         Fuente.getInstance().getFrecuenciasCadenas();
         Fuente.getInstance().getEntropiaCadenas();
+        Fuente.getInstance().getInecuaciones();
     }
 }
