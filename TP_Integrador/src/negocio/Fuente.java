@@ -343,23 +343,37 @@ public class Fuente {
     }
 
     // TODO: 3/10/2022 inecuacion de Kraft, MacMillan, Longitud Media
-    public void getInecuaciones() {
+    public void incisoC() { //no se que nombre ponerle
         int r = 3;
 
         //calcula Kraft
-        getKraft(r,this.cadena3);
-        getKraft(r,this.cadena5);
-        getKraft(r,this.cadena7);
-    }
-    public void getKraft(int r,HashMap<String,Float> cadena) {
-        int q,i;
-        float suma=0;
+        getKraft(r, this.cadena3);
+        getKraft(r, this.cadena5);
+        getKraft(r, this.cadena7);
 
+        //calcula longitud media
+        getLongitudMedia(this.cadena3);
+        getLongitudMedia(this.cadena5);
+        getLongitudMedia(this.cadena7);
+    }
+
+    public void getKraft(int r, HashMap<String, Float> cadena) {
+        int q, i;
+        float suma = 0;
         for (Map.Entry<String, Float> entry : cadena.entrySet()) {
             String clave = entry.getKey();
             suma += Math.pow(r, -clave.length());
         }
-
-        System.out.printf("KRAFT:  %.2f \n",suma);
+        System.out.printf("KRAFT:  %.2f \n", suma);
     }
+
+    public void getLongitudMedia(HashMap<String, Float> cadena) {
+        float longitud = 0;
+        for (Map.Entry<String, Float> entry : cadena.entrySet()) {
+            String clave = entry.getKey();
+            longitud += cadena.get(clave) * clave.length();
+        }
+        System.out.printf("LONGITUD MEDIA: %.2f \n", longitud);
+    }
+
 }
