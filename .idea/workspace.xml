@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4f6dad3e-c594-4557-af2f-2eadbc3312ca" name="Changes" comment="HashMap y Fuente">
+    <list default="true" id="4f6dad3e-c594-4557-af2f-2eadbc3312ca" name="Changes" comment="se creo el PriorityTree, que permite instanciar y almacenar el arbol de para generar el codigo">
+      <change afterPath="$PROJECT_DIR$/TP_Integrador/src/main/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TP_Integrador/src/modelo/Node.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TP_Integrador/src/modelo/PriorityTree.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TP_Integrador/src/negocio/Fuente.java" beforeDir="false" afterPath="$PROJECT_DIR$/TP_Integrador/src/negocio/Fuente.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TP_Integrador/src/prueba/Prueba.java" beforeDir="false" afterPath="$PROJECT_DIR$/TP_Integrador/src/prueba/Prueba.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/teoria-de-la-informacion/negocio/Fuente.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/teoria-de-la-informacion/negocio/Fuente.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/teoria-de-la-informacion/prueba/Prueba.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/teoria-de-la-informacion/prueba/Prueba.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -135,6 +136,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="HashMap y Fuente" />
-    <option name="LAST_COMMIT_MESSAGE" value="HashMap y Fuente" />
+    <MESSAGE value="se creo el PriorityTree, que permite instanciar y almacenar el arbol de para generar el codigo" />
+    <option name="LAST_COMMIT_MESSAGE" value="se creo el PriorityTree, que permite instanciar y almacenar el arbol de para generar el codigo" />
   </component>
 </project>
