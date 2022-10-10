@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4f6dad3e-c594-4557-af2f-2eadbc3312ca" name="Changes" comment="se creo el PriorityTree, que permite instanciar y almacenar el arbol de para generar el codigo">
-      <change afterPath="$PROJECT_DIR$/TP_Integrador/src/main/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TP_Integrador/src/modelo/Node.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TP_Integrador/src/modelo/PriorityTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TP_Integrador/src/prueba/Prueba.java" beforeDir="false" afterPath="$PROJECT_DIR$/TP_Integrador/src/prueba/Prueba.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/teoria-de-la-informacion/prueba/Prueba.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/teoria-de-la-informacion/prueba/Prueba.class" afterDir="false" />
-    </list>
+    <list default="true" id="4f6dad3e-c594-4557-af2f-2eadbc3312ca" name="Changes" comment="se creo el PriorityTree, que permite instanciar y almacenar el arbol de para generar el codigo" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -87,7 +80,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662775098840</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="se creo el PriorityTree, que permite instanciar y almacenar el arbol de para generar el codigo">
+      <created>1664984811744</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1664984811745</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -1,5 +1,6 @@
 package prueba;
 
+import modelo.Cadena;
 import modelo.PriorityTree;
 import negocio.Fuente;
 import modelo.Matriz;
@@ -25,15 +26,25 @@ public class Prueba {
 
         //TREE
         PriorityTree tree = new PriorityTree();
-        ArrayList<Float> list = new ArrayList<Float>();
-        list.add((float) 0.2);
-        list.add((float) 0.1);
-        list.add((float) 0.05);
-        list.add((float) 0.25);
-        list.add((float) 0.07);
-        list.add((float) 0.33);
+        ArrayList<Cadena> list = new ArrayList<Cadena>();
+        list.add(new Cadena("s1", (float) 0.33));
+        list.add(new Cadena("s2", (float) 0.25));
+        list.add(new Cadena("s3", (float) 0.2));
+        list.add(new Cadena("s4", (float) 0.1));
+        list.add(new Cadena("s5", (float) 0.07));
+        list.add(new Cadena("s6", (float) 0.05));
+
+
+
+//        list.add((float) 0.1);
+//        list.add((float) 0.05);
+//        list.add((float) 0.25);
+//        list.add((float) 0.07);
+//        list.add((float) 0.33);
         tree.loadTree(list.iterator());
-        System.out.println(tree.getPreorder());
+        for(int i = 0 ; i < list.size() ; i++)
+            System.out.println(list.get(i));
+//        System.out.println(tree.getPreorder());
 
     }
 }
