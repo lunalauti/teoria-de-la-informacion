@@ -1,6 +1,7 @@
 package main.java.main;
 
 import main.java.modelo.Codificador;
+import main.java.modelo.Decodificador;
 
 import java.io.IOException;
 
@@ -22,6 +23,9 @@ public class Main {
         codificador = new Codificador(7, simbolos);
         codificador.readFile("./tp1_grupo3.txt");
         codificador.codingFile("./tp1_grupo3.txt", "./cadenas7.dat");
+
+        Decodificador dec = new Decodificador();
+        dec.readFile("./cadenas3.dat");
 
     }
 

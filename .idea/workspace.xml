@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4f6dad3e-c594-4557-af2f-2eadbc3312ca" name="Changes" comment="change gitignore">
+    <list default="true" id="4f6dad3e-c594-4557-af2f-2eadbc3312ca" name="Changes" comment="correccion en ciclos y tipos">
+      <change afterPath="$PROJECT_DIR$/TP_Integrador/src/main/java/modelo/Decodificador.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TP_Integrador/src/main/java/fileSystem/WriterFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/TP_Integrador/src/main/java/fileSystem/WriterFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TP_Integrador/src/main/java/modelo/Codificador.java" beforeDir="false" afterPath="$PROJECT_DIR$/TP_Integrador/src/main/java/modelo/Codificador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/teoria-de-la-informacion/main/java/fileSystem/WriterFile.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/teoria-de-la-informacion/main/java/fileSystem/WriterFile.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP_Integrador/src/main/java/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/TP_Integrador/src/main/java/main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/teoria-de-la-informacion/main/java/main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/teoria-de-la-informacion/main/java/main/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/teoria-de-la-informacion/main/java/modelo/Codificador.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/teoria-de-la-informacion/main/java/modelo/Codificador.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -142,7 +142,21 @@
       <option name="project" value="LOCAL" />
       <updated>1665525930965</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="se agrego escribir la tabla en el archivo de salida">
+      <created>1665526811142</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1665526811142</updated>
+    </task>
+    <task id="LOCAL-00007" summary="correccion en ciclos y tipos">
+      <created>1665527050695</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1665527050695</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -195,7 +209,9 @@
     <MESSAGE value="Se agrego la clase Cadena, y la funcionalidad, de que cuando se crea el PriorityTree, se genera el codigo de dicha cadena" />
     <MESSAGE value="Nueva estructura del proyecto, y guardado de los codigos Huffman en un archivo" />
     <MESSAGE value="change gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="change gitignore" />
+    <MESSAGE value="se agrego escribir la tabla en el archivo de salida" />
+    <MESSAGE value="correccion en ciclos y tipos" />
+    <option name="LAST_COMMIT_MESSAGE" value="correccion en ciclos y tipos" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
