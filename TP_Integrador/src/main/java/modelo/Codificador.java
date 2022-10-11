@@ -5,13 +5,12 @@ import main.java.fileSystem.WriterFile;
 
 import java.io.IOException;
 import java.util.HashMap;
-import java.util.Iterator;
 
 public class Codificador {
-    private int wordlength;
+    private final int wordlength;
     private int wordCount;
     private HashMap<String, Cadena> cadenas;
-    private char[] alfabetoCodigo;
+    private final char[] alfabetoCodigo;
     private float entrophy;
     private float kraft;
     private float longMedia;
@@ -45,28 +44,22 @@ public class Codificador {
     }
 
     private void determinateProbabilities(int count){
-        Iterator<Cadena> it = this.cadenas.values().iterator();
-        while(it.hasNext()){
-            Cadena cadena = it.next();
-            cadena.setProbability( (float) cadena.getCount() / count);
+        for (Cadena cadena : this.cadenas.values()) {
+            cadena.setProbability((float) cadena.getCount() / count);
         }
     }
 
     public float getCodeEntrophy(){
         float entrophy = 0;
-        Iterator<Cadena> it = this.cadenas.values().iterator();
-        while(it.hasNext()){
-            Cadena cadena = it.next();
-            entrophy += (float) (cadena.getProbability() * -Math.log(cadena.getProbability())/ Math.log(3));
+        for (Cadena cadena : this.cadenas.values()) {
+            entrophy += (float) (cadena.getProbability() * -Math.log(cadena.getProbability()) / Math.log(3));
         }
         return entrophy;
     }
 
     public float getKraft(){
         float kraft = 0;
-        Iterator<Cadena> it = this.cadenas.values().iterator();
-        while(it.hasNext()){
-            Cadena cadena = it.next();
+        for (Cadena cadena : this.cadenas.values()) {
             kraft += (float) (Math.pow(this.alfabetoCodigo.length, -cadena.getCadena().length()));
         }
         return kraft;
@@ -74,10 +67,8 @@ public class Codificador {
 
     public float getLongitudMedia(){
         float longitud = 0;
-        Iterator<Cadena> it = this.cadenas.values().iterator();
-        while(it.hasNext()){
-            Cadena cadena = it.next();
-            longitud += (float) ( cadena.getProbability() * cadena.getCadena().length());
+        for (Cadena cadena : this.cadenas.values()) {
+            longitud += cadena.getProbability() * cadena.getCadena().length();
         }
         return longitud;
     }
@@ -88,14 +79,12 @@ public class Codificador {
     }
 
     public void codingFile(String inputName, String outputName) throws IOException {
-        int acum = 0;
         ReaderFile inputFile = new ReaderFile(inputName);
         WriterFile outputFile = new WriterFile(outputName);
         outputFile.writeString(getFormatTable());
         while(!inputFile.isFinish()){
             String word = inputFile.readWord(wordlength);
             if(word != ""){
-                acum += cadenas.get(word).getCode().length();
                 outputFile.writeCode(cadenas.get(word).getCode());
             }
         }
@@ -105,10 +94,8 @@ public class Codificador {
 
     private String getFormatTable(){
         String table = "";
-        Iterator<Cadena> it = this.cadenas.values().iterator();
-        while(it.hasNext()){
-            Cadena cadena = it.next();
-            table += String.format("%s:%s;",cadena.getCadena(),cadena.getCode());
+        for (Cadena cadena : this.cadenas.values()) {
+            table += String.format("%s:%s;", cadena.getCadena(), cadena.getCode());
         }
         table +="\n";
         return table;
@@ -117,9 +104,7 @@ public class Codificador {
     public String toString(){
         String response = "";
         response += String.format("%-7s %-5s %-5s %-13s\n", "Cadena", "Prob", "Info", "Codigo");
-        Iterator<Cadena> it = this.cadenas.values().iterator();
-        while(it.hasNext()){
-            Cadena cadena = it.next();
+        for (Cadena cadena : this.cadenas.values()) {
             response += cadena;
         }
         response += String.format("La entropia es: %4.2f\n", this.entrophy);
