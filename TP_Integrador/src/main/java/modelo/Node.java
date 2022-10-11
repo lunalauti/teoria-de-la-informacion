@@ -1,4 +1,4 @@
-package modelo;
+package main.java.modelo;
 
 public class Node implements Comparable{
     private Node left;
