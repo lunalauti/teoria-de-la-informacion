@@ -45,6 +45,10 @@ public class WriterFile {
         return res;
     }
 
+    public void writeString(String string) throws IOException {
+        dataOutputStream.writeBytes(string);
+    }
+
 
 
 }

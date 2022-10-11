@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4f6dad3e-c594-4557-af2f-2eadbc3312ca" name="Changes" comment="Nueva estructura del proyecto, y guardado de los codigos Huffman en un archivo">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="4f6dad3e-c594-4557-af2f-2eadbc3312ca" name="Changes" comment="change gitignore">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP_Integrador/src/main/java/fileSystem/WriterFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/TP_Integrador/src/main/java/fileSystem/WriterFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP_Integrador/src/main/java/modelo/Codificador.java" beforeDir="false" afterPath="$PROJECT_DIR$/TP_Integrador/src/main/java/modelo/Codificador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/teoria-de-la-informacion/main/java/fileSystem/WriterFile.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/teoria-de-la-informacion/main/java/fileSystem/WriterFile.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/teoria-de-la-informacion/main/java/modelo/Codificador.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/teoria-de-la-informacion/main/java/modelo/Codificador.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +62,20 @@
       <recent name="C:\Users\320 i5\Documents\Facultad\Teoria de la Informacion\Practica\teoria-de-la-informacion" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.java.main.Main" />
+      <module name="teoria-de-la-informacion" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.java.main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Prueba" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="prueba.Prueba" />
       <module name="teoria-de-la-informacion" />
@@ -75,6 +91,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.Prueba" />
       </list>
     </recent_temporary>
@@ -118,7 +135,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665522705167</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="change gitignore">
+      <created>1665525930965</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1665525930965</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -170,7 +194,8 @@
     <MESSAGE value="se creo el PriorityTree, que permite instanciar y almacenar el arbol de para generar el codigo" />
     <MESSAGE value="Se agrego la clase Cadena, y la funcionalidad, de que cuando se crea el PriorityTree, se genera el codigo de dicha cadena" />
     <MESSAGE value="Nueva estructura del proyecto, y guardado de los codigos Huffman en un archivo" />
-    <option name="LAST_COMMIT_MESSAGE" value="Nueva estructura del proyecto, y guardado de los codigos Huffman en un archivo" />
+    <MESSAGE value="change gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="change gitignore" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

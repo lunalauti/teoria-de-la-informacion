@@ -91,6 +91,7 @@ public class Codificador {
         int acum = 0;
         ReaderFile inputFile = new ReaderFile(inputName);
         WriterFile outputFile = new WriterFile(outputName);
+        outputFile.writeString(getFormatTable());
         while(!inputFile.isFinish()){
             String word = inputFile.readWord(wordlength);
             if(word != ""){
@@ -100,6 +101,17 @@ public class Codificador {
         }
         inputFile.closeFile();
         outputFile.closeFile();
+    }
+
+    private String getFormatTable(){
+        String table = "";
+        Iterator<Cadena> it = this.cadenas.values().iterator();
+        while(it.hasNext()){
+            Cadena cadena = it.next();
+            table += String.format("%s:%s;",cadena.getCadena(),cadena.getCode());
+        }
+        table +="\n";
+        return table;
     }
 
     public String toString(){
