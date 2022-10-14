@@ -24,6 +24,11 @@ public class Cadena implements Comparable {
         this.count = 1;
     }
 
+    public Cadena(String cadena, String code){
+        this.cadena = cadena;
+        this.code = code;
+    }
+
     public String getCadena() {
         return cadena;
     }

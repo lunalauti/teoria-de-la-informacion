@@ -1,22 +1,35 @@
 package main.java.modelo;
 
 import main.java.fileSystem.ReaderFile;
+import main.java.fileSystem.WriterFile;
+import main.java.helpers.Binary;
 
 import java.io.IOException;
 import java.util.HashMap;
 
 public class Decodificador {
-    private HashMap<String, String> table;
+    private HashMap<String, Cadena> table;
     private String message;
 
     public Decodificador(){
         this.table = new HashMap<>();
+        this.message = "";
+    }
+
+    public String getMessage(){
+        return this.message;
     }
 
     public void readFile(String fileName) throws IOException {
         ReaderFile reader = new ReaderFile(fileName);
         readTable(reader);
-        System.out.println(table);
+        int length = readLength(reader);
+        readContain(reader, length);
+    }
+
+    public void saveMessage(String fileName) throws IOException {
+        WriterFile writer = new WriterFile(fileName);
+        writer.writeString(message);
     }
 
     private void readTable(ReaderFile reader) throws IOException {
@@ -35,9 +48,41 @@ public class Decodificador {
             }
             if(!reader.isFinish())
                 reader.readNext();
-            table.put(cadena,code);
+            table.put(code,new Cadena(cadena, code));
         }
         if(!reader.isFinish())
             reader.readNext();
+    }
+    private int readLength(ReaderFile reader) throws IOException {
+        return reader.readInteger();
+    }
+    private void readContain(ReaderFile reader, int length) throws IOException {
+        String contain = getContain(reader);
+        reader.closeFile();
+        this.message = translateContain(contain, length);
+    }
+
+    private String getContain(ReaderFile reader) throws IOException {
+        StringBuilder buffer = new StringBuilder("");
+        while(!reader.isFinish()){
+            buffer.append(Binary.getbinaryByInt(reader.getCurrentSymbol()));
+            reader.readNext();
+        }
+        return buffer.toString();
+    }
+
+    private String translateContain(String contain, int length){
+        StringBuilder message = new StringBuilder();
+        String chunk = contain.substring(0, length);
+        String code = "";
+        while(chunk.length() > 0){
+            code += chunk.charAt(0);
+            chunk = chunk.substring(1);
+            if(table.containsKey(code)){
+                message.append(table.get(code).getCadena());
+                code = "";
+            }
+        }
+        return message.toString();
     }
 }

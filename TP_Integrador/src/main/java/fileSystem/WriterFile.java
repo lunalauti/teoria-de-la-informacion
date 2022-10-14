@@ -1,6 +1,11 @@
 package main.java.fileSystem;
 
-import java.io.*;
+import main.java.helpers.Binary;
+
+import java.io.DataOutputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
 
 public class WriterFile {
     String buffer = "";
@@ -22,7 +27,7 @@ public class WriterFile {
             buffer += (char) chunk.charAt(0);
             chunk = chunk.substring(1);
             if(buffer.length() == 8){
-                write(getIntByBinary(buffer));
+                write(Binary.getIntByBinary(buffer));
                 buffer = "";
             }
         }
@@ -30,23 +35,19 @@ public class WriterFile {
 
     public void closeFile() throws IOException {
         if(buffer.length() != 0)
-            write(getIntByBinary(buffer));
+            write(Binary.getIntByBinary(Binary.completeWithCeros(buffer)));
         this.dataOutputStream.close();
         this.outputStream.close();
     }
 
-    private int getIntByBinary(String buffer){
-        int res = 0;
-        char chars[] = buffer.toCharArray();
-        for(int i = 0 ; i < chars.length ; i++){
-            int pos = chars.length - i - 1;
-            res += (chars[i] == '1') ? Math.pow(2, pos) : 0;
-        }
-        return res;
-    }
+
 
     public void writeString(String string) throws IOException {
         dataOutputStream.writeBytes(string);
+    }
+
+    public void writeInteger(int number) throws IOException {
+        dataOutputStream.writeInt(number);
     }
 
 

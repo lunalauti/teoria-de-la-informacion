@@ -1,11 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4f6dad3e-c594-4557-af2f-2eadbc3312ca" name="Changes" comment="correccion en ciclos y tipos">
-      <change afterPath="$PROJECT_DIR$/TP_Integrador/src/main/java/modelo/Decodificador.java" afterDir="false" />
+    <list default="true" id="4f6dad3e-c594-4557-af2f-2eadbc3312ca" name="Changes" comment="se creo el decoder y se recupero la tabla del archivo">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TP_Integrador/src/main/java/helpers/Binary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP_Integrador/src/main/java/fileSystem/ReaderFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/TP_Integrador/src/main/java/fileSystem/ReaderFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP_Integrador/src/main/java/fileSystem/WriterFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/TP_Integrador/src/main/java/fileSystem/WriterFile.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TP_Integrador/src/main/java/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/TP_Integrador/src/main/java/main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP_Integrador/src/main/java/modelo/Cadena.java" beforeDir="false" afterPath="$PROJECT_DIR$/TP_Integrador/src/main/java/modelo/Cadena.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP_Integrador/src/main/java/modelo/Codificador.java" beforeDir="false" afterPath="$PROJECT_DIR$/TP_Integrador/src/main/java/modelo/Codificador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP_Integrador/src/main/java/modelo/Decodificador.java" beforeDir="false" afterPath="$PROJECT_DIR$/TP_Integrador/src/main/java/modelo/Decodificador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/teoria-de-la-informacion/main/java/fileSystem/ReaderFile.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/teoria-de-la-informacion/main/java/fileSystem/ReaderFile.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/teoria-de-la-informacion/main/java/fileSystem/WriterFile.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/teoria-de-la-informacion/main/java/fileSystem/WriterFile.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/teoria-de-la-informacion/main/java/main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/teoria-de-la-informacion/main/java/main/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/teoria-de-la-informacion/main/java/modelo/Cadena.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/teoria-de-la-informacion/main/java/modelo/Cadena.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/teoria-de-la-informacion/main/java/modelo/Codificador.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/teoria-de-la-informacion/main/java/modelo/Codificador.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -47,15 +57,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/320 i5/Documents/Facultad/Teoria de la Informacion/Practica/teoria-de-la-informacion/TP_Integrador",
-    "settings.editor.selected.configurable": "vcs.Git"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/320 i5/Documents/Facultad/Teoria de la Informacion/Practica/teoria-de-la-informacion/TP_Integrador&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\320 i5\Documents\Facultad\Teoria de la Informacion\Practica\teoria-de-la-informacion\TP_Integrador" />
@@ -156,7 +167,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665527050695</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="se creo el decoder y se recupero la tabla del archivo">
+      <created>1665528347906</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1665528347906</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -211,7 +229,8 @@
     <MESSAGE value="change gitignore" />
     <MESSAGE value="se agrego escribir la tabla en el archivo de salida" />
     <MESSAGE value="correccion en ciclos y tipos" />
-    <option name="LAST_COMMIT_MESSAGE" value="correccion en ciclos y tipos" />
+    <MESSAGE value="se creo el decoder y se recupero la tabla del archivo" />
+    <option name="LAST_COMMIT_MESSAGE" value="se creo el decoder y se recupero la tabla del archivo" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -82,12 +82,16 @@ public class Codificador {
         ReaderFile inputFile = new ReaderFile(inputName);
         WriterFile outputFile = new WriterFile(outputName);
         outputFile.writeString(getFormatTable());
-        while(!inputFile.isFinish()){
+        StringBuilder contain = new StringBuilder("");
+        while(!inputFile.isFinish()){ //Se almacenan los codigos en un string
             String word = inputFile.readWord(wordlength);
-            if(word != ""){
-                outputFile.writeCode(cadenas.get(word).getCode());
-            }
+            if(word != "")
+                contain.append(cadenas.get(word).getCode());
         }
+        int length = contain.length();
+        outputFile.writeInteger(length); // se almacena un entero con la dimension de los codigos.
+//        System.out.println("Los codigos guardados son: " + length);
+        outputFile.writeCode(contain.toString());
         inputFile.closeFile();
         outputFile.closeFile();
     }

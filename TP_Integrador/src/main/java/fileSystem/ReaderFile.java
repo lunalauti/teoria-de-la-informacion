@@ -1,15 +1,17 @@
 package main.java.fileSystem;
 
+import main.java.helpers.Binary;
+
 import java.io.*;
 
 public class ReaderFile {
-    File file = null;
-    Reader reader = null;
+    InputStream file = null;
+    DataInputStream reader = null;
     int currentSymbol;
 
     public ReaderFile(String fileName) throws IOException {
-        file = new File(fileName);
-        reader = new BufferedReader(new FileReader(file));
+        file = new FileInputStream(fileName);
+        reader = new DataInputStream(file);
         currentSymbol = reader.read();
     }
 
@@ -41,8 +43,16 @@ public class ReaderFile {
             response += String.format("%c", currentSymbol);
             readNext();
         }
-
         return response.length() == length ? response : "";
+    }
+
+    public int readInteger() throws IOException {
+        StringBuilder chunk = new StringBuilder();
+        for(int i = 0 ; i < 4 ; i++){
+            chunk.append(Binary.getbinaryByInt(currentSymbol));
+            readNext();
+        }
+        return Binary.getIntByBinary(chunk.toString());
     }
 
 }
