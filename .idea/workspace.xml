@@ -1,22 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4f6dad3e-c594-4557-af2f-2eadbc3312ca" name="Changes" comment="se creo el decoder y se recupero la tabla del archivo">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TP_Integrador/src/main/java/helpers/Binary.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="4f6dad3e-c594-4557-af2f-2eadbc3312ca" name="Changes" comment="Se agrego la reconstruccion del archivo original, y una modulo para comparar el archivo original y el">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TP_Integrador/src/main/java/fileSystem/ReaderFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/TP_Integrador/src/main/java/fileSystem/ReaderFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TP_Integrador/src/main/java/fileSystem/WriterFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/TP_Integrador/src/main/java/fileSystem/WriterFile.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TP_Integrador/src/main/java/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/TP_Integrador/src/main/java/main/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TP_Integrador/src/main/java/modelo/Cadena.java" beforeDir="false" afterPath="$PROJECT_DIR$/TP_Integrador/src/main/java/modelo/Cadena.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TP_Integrador/src/main/java/modelo/Codificador.java" beforeDir="false" afterPath="$PROJECT_DIR$/TP_Integrador/src/main/java/modelo/Codificador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TP_Integrador/src/main/java/modelo/Decodificador.java" beforeDir="false" afterPath="$PROJECT_DIR$/TP_Integrador/src/main/java/modelo/Decodificador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/teoria-de-la-informacion/main/java/fileSystem/ReaderFile.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/teoria-de-la-informacion/main/java/fileSystem/ReaderFile.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/teoria-de-la-informacion/main/java/fileSystem/WriterFile.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/teoria-de-la-informacion/main/java/fileSystem/WriterFile.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/teoria-de-la-informacion/main/java/main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/teoria-de-la-informacion/main/java/main/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/teoria-de-la-informacion/main/java/modelo/Cadena.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/teoria-de-la-informacion/main/java/modelo/Cadena.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/teoria-de-la-informacion/main/java/modelo/Codificador.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/teoria-de-la-informacion/main/java/modelo/Codificador.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -174,7 +162,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665528347906</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Se agrego la reconstruccion del archivo original, y una modulo para comparar el archivo original y el">
+      <created>1665761325058</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1665761325058</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -230,7 +225,8 @@
     <MESSAGE value="se agrego escribir la tabla en el archivo de salida" />
     <MESSAGE value="correccion en ciclos y tipos" />
     <MESSAGE value="se creo el decoder y se recupero la tabla del archivo" />
-    <option name="LAST_COMMIT_MESSAGE" value="se creo el decoder y se recupero la tabla del archivo" />
+    <MESSAGE value="Se agrego la reconstruccion del archivo original, y una modulo para comparar el archivo original y el" />
+    <option name="LAST_COMMIT_MESSAGE" value="Se agrego la reconstruccion del archivo original, y una modulo para comparar el archivo original y el" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

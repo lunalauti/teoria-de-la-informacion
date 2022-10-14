@@ -25,7 +25,6 @@ public class Main {
         decodificacion5();
         decodificacion7();
 
-
 //        compareFiles("./tp1_grupo3.txt", "./reconstruccion3.txt");
 //        compareFiles("./tp1_grupo3.txt", "./reconstruccion5.txt");
 //        compareFiles("./tp1_grupo3.txt", "./reconstruccion7.txt");
@@ -46,7 +45,7 @@ public class Main {
         Codificador codificador = new Codificador(3, simbolos);
         codificador.readFile("./tp1_grupo3.txt");
         codificador.codingFile("./tp1_grupo3.txt", "./cadenas3.dat");
-        System.out.println("Codificador de 3\n" + codificador.getStats());
+        System.out.println("Codificador de 3\n" + codificador.getStats() + "\n");
     }
 
     public static void codificacion5() throws IOException {
@@ -54,7 +53,7 @@ public class Main {
         Codificador codificador = new Codificador(5, simbolos);
         codificador.readFile("./tp1_grupo3.txt");
         codificador.codingFile("./tp1_grupo3.txt", "./cadenas5.dat");
-        System.out.println("Codificador de 5\n" + codificador.getStats());
+        System.out.println("Codificador de 5\n" + codificador.getStats() + "\n");
     }
 
     public static void codificacion7() throws IOException {
@@ -62,7 +61,7 @@ public class Main {
         Codificador codificador = new Codificador(7, simbolos);
         codificador.readFile("./tp1_grupo3.txt");
         codificador.codingFile("./tp1_grupo3.txt", "./cadenas7.dat");
-        System.out.println("Codificador de 7\n" + codificador.getStats());
+        System.out.println("Codificador de 7\n" + codificador.getStats() + "\n");
     }
 
     public static void decodificacion3() throws  IOException {
