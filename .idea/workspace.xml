@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4f6dad3e-c594-4557-af2f-2eadbc3312ca" name="Changes" comment="Se agrego la reconstruccion del archivo original, y una modulo para comparar el archivo original y el">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TP_Integrador/src/main/java/modelo/Codificador.java" beforeDir="false" afterPath="$PROJECT_DIR$/TP_Integrador/src/main/java/modelo/Codificador.java" afterDir="false" />
-    </list>
+    <list default="true" id="4f6dad3e-c594-4557-af2f-2eadbc3312ca" name="Changes" comment="Se agrego redundancia y rendimiento" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -182,7 +179,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665762871080</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Se agrego redundancia y rendimiento">
+      <created>1666097650619</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1666097650619</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -239,7 +243,8 @@
     <MESSAGE value="correccion en ciclos y tipos" />
     <MESSAGE value="se creo el decoder y se recupero la tabla del archivo" />
     <MESSAGE value="Se agrego la reconstruccion del archivo original, y una modulo para comparar el archivo original y el" />
-    <option name="LAST_COMMIT_MESSAGE" value="Se agrego la reconstruccion del archivo original, y una modulo para comparar el archivo original y el" />
+    <MESSAGE value="Se agrego redundancia y rendimiento" />
+    <option name="LAST_COMMIT_MESSAGE" value="Se agrego redundancia y rendimiento" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
