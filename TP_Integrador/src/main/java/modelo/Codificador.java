@@ -105,6 +105,14 @@ public class Codificador {
         return table;
     }
 
+    public float getRendimiento(){
+        return this.entrophy / this.longMedia;
+    }
+
+    public float getRedundancia(){
+        return 1 - getRendimiento();
+    }
+
     public String toString(){
         String response = "";
         response += String.format("%-7s %-5s %-5s %-13s\n", "Cadena", "Prob", "Info", "Codigo");
@@ -124,7 +132,7 @@ public class Codificador {
         response += String.format("La entropia es: %4.2f\n", this.entrophy);
         response += String.format("La inecuacion de Kraft es: %4.2f <= 1\n", this.kraft);
         response += String.format("La longitud media del codigo es: %4.2f\n", this.longMedia);
-        response += String.format("Rendimiento: %4.2f  Redudancia: %4.2f", this.entrophy/this.longMedia, 1 - this.entrophy/ this.longMedia);
+        response += String.format("Rendimiento: %4.2f  Redudancia: %4.2f", getRendimiento(), getRedundancia());
 
         return response;
     }
