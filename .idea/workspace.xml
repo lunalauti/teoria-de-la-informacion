@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4f6dad3e-c594-4557-af2f-2eadbc3312ca" name="Changes" comment="Se agrego redundancia y rendimiento">
+    <list default="true" id="4f6dad3e-c594-4557-af2f-2eadbc3312ca" name="Changes" comment="Se agrego los .rar al gitignore">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -22,7 +23,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="codeGeneration" />
+        <entry key="$PROJECT_DIR$" value="structPorject" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -89,6 +90,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Prueba" />
         <item itemvalue="Application.Prueba" />
       </list>
     </recent_temporary>
@@ -195,7 +197,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666100566147</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Se agrego los .rar al gitignore">
+      <created>1666193131439</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1666193131439</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -253,21 +262,7 @@
     <MESSAGE value="se creo el decoder y se recupero la tabla del archivo" />
     <MESSAGE value="Se agrego la reconstruccion del archivo original, y una modulo para comparar el archivo original y el" />
     <MESSAGE value="Se agrego redundancia y rendimiento" />
-    <option name="LAST_COMMIT_MESSAGE" value="Se agrego redundancia y rendimiento" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <breakpoint enabled="true" type="java-exception">
-          <properties class="java.lang.NoClassDefFoundError" package="java.lang" />
-          <option name="timeStamp" value="1" />
-        </breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/TP_Integrador/src/main/java/modelo/Codificador.java</url>
-          <line>100</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Se agrego los .rar al gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="Se agrego los .rar al gitignore" />
   </component>
 </project>
