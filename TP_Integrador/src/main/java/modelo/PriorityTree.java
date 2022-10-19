@@ -1,4 +1,4 @@
-package modelo;
+package main.java.modelo;
 
 import java.util.Iterator;
 import java.util.PriorityQueue;
@@ -10,12 +10,12 @@ public class PriorityTree {
         this.root = null;
     }
 
-    public void loadTree(Iterator<Float> it){
+    public void loadTree(Iterator<Cadena> it){
         PriorityQueue<Node> queue = getPriorityQueue(it);
         this.root = getRoot(queue);
     }
 
-    private PriorityQueue<Node> getPriorityQueue(Iterator<Float> it){
+    private PriorityQueue<Node> getPriorityQueue(Iterator<Cadena> it){
         PriorityQueue<Node> queue = new PriorityQueue<Node>();
         while(it.hasNext())
             queue.add(new Node(it.next()));
@@ -34,9 +34,11 @@ public class PriorityTree {
         Node right = queue.poll();
         if(left != null && right != null){
             float newValue = right.getValue() + left.getValue();
-            Node newNode = new Node(newValue);
+            Node newNode = new Node(new Cadena("", newValue));
             newNode.setLeft(left);
             newNode.setRight(right);
+            left.appendPrefix("0");
+            right.appendPrefix("1");
             queue.add(newNode);
         }
 

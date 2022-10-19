@@ -1,12 +1,12 @@
-package modelo;
+package main.java.modelo;
 
 public class Node implements Comparable{
     private Node left;
     private Node right;
-    private float value;
+    private Cadena cadena;
 
-    public Node(float value){
-        this.value = value;
+    public Node(Cadena cadena){
+        this.cadena = cadena;
         this.left = null;
         this.right = null;
     }
@@ -27,23 +27,32 @@ public class Node implements Comparable{
         this.right = right;
     }
 
-    public float getValue() {
-        return value;
+    public float getValue(){
+        return this.cadena.getProbability();
     }
 
-    public void setValue(float value) {
-        this.value = value;
+    public void setCadena(Cadena cadena) {
+        this.cadena = cadena;
+    }
+
+    public void appendPrefix(String prefix){
+        cadena.appendPrefix(prefix);
+        if(right != null)
+            right.appendPrefix(prefix);
+        if(left != null)
+            left.appendPrefix(prefix);
+
     }
 
     @Override
     public int compareTo(Object o) {
         Node other = (Node) o;
-        return Float.compare(this.value, other.value);
+        return cadena.compareTo(other.cadena);
     }
 
     @Override
     public String toString() {
-        return String.format("%3.2f", this.value);
+        return cadena.toString();
     }
 
 
