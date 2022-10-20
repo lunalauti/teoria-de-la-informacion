@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="teoria-de-la-informacion">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/ejecutable/teoria-de-la-informacion.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

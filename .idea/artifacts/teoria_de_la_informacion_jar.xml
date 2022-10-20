@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="teoria-de-la-informacion:jar">
+    <output-path>$PROJECT_DIR$/ejecutable</output-path>
+    <root id="archive" name="teoria-de-la-informacion.jar">
+      <element id="module-output" name="teoria-de-la-informacion" />
+    </root>
+  </artifact>
+</component>
