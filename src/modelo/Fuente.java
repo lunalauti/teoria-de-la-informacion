@@ -100,10 +100,12 @@ public class Fuente {
         while( i < matrix.length && response){
             int j = 0;
             while(j < matrix.length && response){
-                double absoluteDifference = Math.abs(matrix[i][j] - (1/matrix.length));
+                double absoluteDifference = Math.abs(matrix[i][j] - matrix[i][i]);
                 if(absoluteDifference > tolerance)
                     response = false;
+                j++;
             }
+            i++;
         }
         return response;
     }
@@ -113,7 +115,7 @@ public class Fuente {
         double acum = 0;
         for(int i = 0 ; i < matrix.length ; i++){
             for(int j = 0 ; j < matrix[0].length ; j++){
-                acum += matrix[i][j] * this.stationaryArray[j] * (matrix[i][j] == 0 ? 0 : (- Math.log(matrix[i][j])/Math.log(2)));
+                acum += matrix[i][j] * this.stationaryArray[j] * (matrix[i][j] == 0 ? 0 : (- Math.log(matrix[i][j])/Math.log(3)));
             }
         }
         return acum;
