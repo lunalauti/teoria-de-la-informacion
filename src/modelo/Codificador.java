@@ -78,6 +78,8 @@ public class Codificador {
         tree.loadTree(this.cadenas.values().iterator());
     }
 
+    
+
     public void codingFile(String inputName, String outputName) throws IOException {
         ReaderFile inputFile = new ReaderFile(inputName);
         WriterFile outputFile = new WriterFile(outputName);

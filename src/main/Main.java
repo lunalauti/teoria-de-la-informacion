@@ -3,7 +3,7 @@ package main;
 import fileSystem.ReaderFile;
 import modelo.Codificador;
 import modelo.Decodificador;
-import modelo.Fuente;
+import modelo.Lector;
 
 import java.io.DataInputStream;
 import java.io.FileInputStream;
@@ -12,7 +12,7 @@ import java.io.InputStream;
 
 public class Main {
     public static void main(String[] args) throws IOException {
-        char simbolos[] = {'a','b','c'};
+       /* char simbolos[] = {'a','b','c'};
         Fuente fuente = new Fuente(3, simbolos);
         fuente.loadSourceFromFile("./tp1_grupo3.txt");
         System.out.println(fuente);
@@ -23,12 +23,14 @@ public class Main {
 
         decodificacion3();
         decodificacion5();
-        decodificacion7();
+        decodificacion7();*/
 
 //        compareFiles("./tp1_grupo3.txt", "./reconstruccion3.txt");
 //        compareFiles("./tp1_grupo3.txt", "./reconstruccion5.txt");
 //        compareFiles("./tp1_grupo3.txt", "./reconstruccion7.txt");
 
+        Lector lector= new Lector();
+        lector.readFile("./tp1_grupo3.txt");
     }
 
 
